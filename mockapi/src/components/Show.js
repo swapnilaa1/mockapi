@@ -2,8 +2,7 @@ import React from "react";
 //import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
 const Show = ({ value1, onDel, onAdd, onPatch ,onPut}) => {
-  console.log("in child", value1);
-  console.log(typeof fetch);
+ 
 
   return (
     <div >

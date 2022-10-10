@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Show from "./Show";
 import Input from "./Input";
-let Web_Url = "http://localhost:3333/todo";
+let Web_Url = "http://localhost:3334/todo";
 const Webhit = () => {
   let addNew = {
     userId: 20,
@@ -18,7 +18,7 @@ const Webhit = () => {
     completed: true,
  
   };
-
+  let [fieldState , setFieldState]=useState({userId:'',title:'',completed:''})
   let [Data, setData] = useState([]);
 
   let hitUrl = async () => {
@@ -50,11 +50,21 @@ const Webhit = () => {
     let {data} = await axios.delete( Web_Url+'/'+c.id);
     hitUrl();
   };
+
+  let handleSubmit=(e)=>{
+    e.preventDefault();
+    console.log(e);
+
+  };
+
+  let handleChange=(e)=>{
+      console.log(e.currentTarget.value);
+  };
   
   return (
     <div className="row" >
         <div className="col-4">
-        <Input />
+        <Input submit={handleSubmit} change={handleChange}/>
         </div>
         <div  className="col-8"> 
           <Show
