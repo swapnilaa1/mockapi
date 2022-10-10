@@ -18,7 +18,7 @@ const Webhit = () => {
     completed: true,
  
   };
-  let [fieldState , setFieldState]=useState({userId:'',title:'',completed:''})
+  let [fieldState , setFieldState]=useState({userId:'',title:'',completed:''});
   let [Data, setData] = useState([]);
 
   let hitUrl = async () => {
@@ -59,6 +59,7 @@ const Webhit = () => {
 
   let handleChange=(e)=>{
       console.log(e.currentTarget.value);
+      
   };
   
   return (
