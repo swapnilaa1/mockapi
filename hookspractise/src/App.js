@@ -6,6 +6,14 @@ import Hook5_useState_with_array from './components/Hook5_useState_with_array';
 import UseEffect from './components/UseEffect';
 import UseEffectClean2 from './components/UseEffectClean2';
 import UseEffect3_problem from './components/UseEffect3_problem';
+import UseEffect4_Fetch_data from './components/UseEffect4_Fetch_data';
+import ContextUse1 from './components/ContextUse1';
+import UseContextHook from './components/UseContextHook';
+import UseReducer from './components/UseReducer';
+import UseReducer2 from './components/UseReducer2';
+import UseReducer3 from './components/UseReducer3';
+import UseReducer4 from './components/UseReducer4';
+import UseReducer5Fetch from './components/UseReducer5Fetch';
 
 function App() {
   return (
@@ -14,10 +22,20 @@ function App() {
       <Hook5_useState_with_array/>
       <Hooks4/>
        <UseEffectClean2/>
-      */}
-      <UseEffect3_problem/>
-     
+       <UseEffect3_problem/>
+      <UseEffect4_Fetch_data/>
+     <ContextUse1/>
+      <UseContextHook/>
+      <UseReducer/>
+   <UseReducer2 />
+   <UseReducer3 />
+   <UseReducer4 />
+   */}
       
+      
+     <UseReducer5Fetch/>
+     
+    
     </div>
   );
 }

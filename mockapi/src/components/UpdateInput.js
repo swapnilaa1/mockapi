@@ -12,11 +12,11 @@ let [localObj , setLocalObj]=useState({userId:23 , title:'hello' });
     <form className="form-group container opacity-75 shadow-lg p-3 m-2 bg-body rounded" onSubmit={submit}>
       <div className="mb-3">
         <label htmlFor="userId" className="form-label">UserId</label>
-        <input type="text" className="form-control" id="userId" name="userId"  onChange={(e)=>change(e)}/>
+        <input type="text" className="form-control" id="userId" name="userId"  onChange={change} value={updateValue.userId} />
       </div>
       <div className="mb-3">
         <label htmlFor="title" className="form-label"> Title </label>
-        <input type="text" className="form-control" id="title" name="title" onChange={change} />
+        <input type="text" className="form-control" id="title" name="title" onChange={change} value={updateValue.title} />
       </div>
       <div className="mb-3">
         <div className="form-check">
