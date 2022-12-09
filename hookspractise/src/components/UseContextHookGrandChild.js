@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const UseContextHookGrandChild = () => {
-  return (
-    <div>UseContextHookGrandChild</div>
-  )
-}
+  return <div>UseContextHookGrandChild</div>;
+};
 
-export default UseContextHookGrandChild
+export default UseContextHookGrandChild;

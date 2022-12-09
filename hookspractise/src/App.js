@@ -14,6 +14,8 @@ import UseReducer2 from './components/UseReducer2';
 import UseReducer3 from './components/UseReducer3';
 import UseReducer4 from './components/UseReducer4';
 import UseReducer5Fetch from './components/UseReducer5Fetch';
+import UseCallb1 from './components/UseCallb1';
+import UseMemo1 from './components/UseMemo1';
 
 function App() {
   return (
@@ -30,10 +32,13 @@ function App() {
    <UseReducer2 />
    <UseReducer3 />
    <UseReducer4 />
-   */}
+   <UseReducer5Fetch/>
+   
+   <UseMemo1/>   
+  */}
       
-      
-     <UseReducer5Fetch/>
+      <UseCallb1/>
+     
      
     
     </div>

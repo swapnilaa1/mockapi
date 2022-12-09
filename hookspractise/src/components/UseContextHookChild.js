@@ -1,6 +1,6 @@
-import React , {useContext} from 'react';
-import { UserContext , CityContext } from './UseContextHook';
-import UseContextHookGrandChild from './UseContextHookGrandChild'
+import React, { useContext } from "react";
+import { UserContext, CityContext } from "./UseContextHook";
+import UseContextHookGrandChild from "./UseContextHookGrandChild";
 
 /*here we dont need to use render prop patterns ..
 1.we have to import useContext and the contextApi ...
@@ -8,16 +8,17 @@ import UseContextHookGrandChild from './UseContextHookGrandChild'
 then this useContext will return as values that we provided in provider..
 */
 
-
 const UseContextHookChild = () => {
-    let user=useContext(UserContext);
-    let city=useContext(CityContext);
+  let user = useContext(UserContext);
+  let city = useContext(CityContext);
   return (
     <div>
-        <h3>Hello {user} your city is {city}</h3>
-        <UseContextHookGrandChild/>
+      <h3>
+        Hello {user} your city is {city}
+      </h3>
+      <UseContextHookGrandChild />
     </div>
-  )
-}
+  );
+};
 
-export default UseContextHookChild
+export default UseContextHookChild;

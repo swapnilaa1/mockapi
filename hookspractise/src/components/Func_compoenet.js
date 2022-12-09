@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-//let [count  , setCount]=useState(0); 
+import React, { useState } from "react";
+//let [count  , setCount]=useState(0);
 /* useState() this is one react hook and hooks are functions so call them
 inside our function...so
 useState(0) ..... this is a call..
@@ -25,26 +25,26 @@ means using callback arraw fucntion and previous State value we increase the sta
 and this is safe..
 */
 const Func_compoenet = () => {
-  let [count  , setCount]=useState(0);
-  let [count2 , setCount2]=useState(1);
+  let [count, setCount] = useState(0);
+  let [count2, setCount2] = useState(1);
 
-  let handleClick=()=>{
-
-    for(let a=0;a<5;a++){
-        //setCount2(count2+1);
-      setCount2(prevState=> prevState+1);
+  let handleClick = () => {
+    for (let a = 0; a < 5; a++) {
+      setCount2(count2 + 1);
+      //setCount2(prevState=> prevState+1);
     }
-    };
-  
-  
-    return (
-    <div>
-        this is count {count}
-        <button onClick={()=>setCount( prevState=>prevState+1)} >increment</button>
-        this is count2  {count2}
-        <button onClick={handleClick}>increment count2 by 5</button>
-    </div>
-  )
-}
+  };
 
-export default Func_compoenet
+  return (
+    <div>
+      this is count {count}
+      <button onClick={() => setCount((prevState) => prevState + 1)}>
+        increment
+      </button>
+      this is count2 {count2}
+      <button onClick={handleClick}>increment count2 by 5</button>
+    </div>
+  );
+};
+
+export default Func_compoenet;
